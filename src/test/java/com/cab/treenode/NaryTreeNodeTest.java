@@ -1,4 +1,4 @@
-package com.jad.treenode;
+package com.cab.treenode;
 
 import org.junit.jupiter.api.Test;
 

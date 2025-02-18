@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.jad</groupId>
+    <groupId>com.cab</groupId>
     <artifactId>treenode</artifactId>
-    <version>1.0.6</version>
+    <version>1.0.0</version>
     <name>TreeNode</name>
     <description>A package to use nary tree node structure.</description>
     <properties>
@@ -39,6 +39,12 @@
             <artifactId>junit-jupiter-engine</artifactId>
             <version>${junit.version}</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <version>3.11.2</version>
+            <scope>package</scope>
         </dependency>
     </dependencies>
 
@@ -86,6 +92,15 @@
                     <artifactId>maven-javadoc-plugin</artifactId>
                     <version>3.7.0</version>
                 </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>3.11.2</version>
+                    <configuration>
+                        <show>public</show>
+                        <nohelp>true</nohelp>
+                    </configuration>
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>
@@ -93,8 +108,8 @@
     <distributionManagement>
         <repository>
             <id>github</id>
-            <name>GitHub Jean-Aymeric Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/Jean-Aymeric/maven-repository</url>
+            <name>GitHub CharlesBta Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/CharlesBta/maven-repository</url>
         </repository>
     </distributionManagement>
 </project>
